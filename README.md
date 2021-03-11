@@ -1,1 +1,0 @@
-# Stockage_Azure_Script

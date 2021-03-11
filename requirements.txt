@@ -17,7 +17,7 @@ parser.add_argument("-cfg",default="config.ini",help="chemin du fichier de confi
 account= Mettre le nom de votre ressource  exemple : sarahtruffert
 container= Mettre le nom de votre container exemple : conteneur
 key= rentrer la clef qui se trouve acceuil> compte> clef d'accès> Afficher les clefs 
-exemple :tlO46950geNzTAoVP8f8que2BAOCoJkgUV1Rdnm1zF5Dyhek8zzL0wOnLBz1VkURFKePopqk/QSQMw4KVW8fSQ==
+exemple :tlO46950geNzTAoVP8f8que2BAOCoJkgUV1RdXXXXXXXXXXXXXX==
 
 
 
@@ -31,3 +31,15 @@ exemple : PS C:\Users\utilisateur\Desktop\blob_deploiement>
 
 Pour récupérer un blob du container : python .\main.py download "nom du fichier à downolad"  
 exemple : python .\main.py download .\hello_world.txt  
+
+
+
+Librairies utilisées : 
+- import sys : importer le système
+- import argparse : implémenter le parser
+- import configparser : 
+- import logging : pour faire la log
+- os.path : Fonctions de manipulation de fichiers.
+- BlobServiceClient: La classe BlobServiceClient vous permet de manipuler les ressources de stockage Azure et les conteneurs blob.
+- ContainerClient : La classe ContainerClient vous permet de manipuler des conteneurs de stockage Azure et leurs blobs.
+- BlobClient : La classe BlobClient vous permet de manipuler des blobs de stockage Azure.

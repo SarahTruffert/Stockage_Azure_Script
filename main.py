@@ -54,7 +54,7 @@ def download(filename, dl_folder, blobclient):
         fichier texte pour tester si ça marche.
         wb = écrire 
     """
-    logging.debug("Download the blob to a local file")
+    logging.info("Download the blob to a local file")
     
 
 

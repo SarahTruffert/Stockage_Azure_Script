@@ -31,34 +31,36 @@ def listb(args, containerclient):
 
 
 def upload(cible, blobclient):
-    with open(cible, "rb") as f:
-        blobclient.upload_blob(f)
-
     """ Charge le fichier texte local dans l’objet Blob en appelant 
         la méthode upload_blob.
     """
+    with open(cible, "rb") as f:
+        blobclient.upload_blob(f)
 
 
 # Download the blob to a local file
 # Add 'DOWNLOAD' before the .txt extension
 # so you can see both files in the data directory
 def download(filename, dl_folder, blobclient):
-    with open(os.path.join(dl_folder,filename), "wb") as my_blob:
-        blob_data=blobclient.download_blob()
-        blob_data.readinto(my_blob)
-        
-    """ Télécharge l’objet Blob créé précédemment via
+     """ Télécharge l’objet Blob créé précédemment via
         download_blob. L’exemple de code ajoute le suffixe
         « DOWNLOAD » au nom de fichier pour voir
         les deux fichiers dans votre système de fichiers local.
         fichier texte pour tester si ça marche.
         wb = écrire 
-    """
+     """
+    with open(os.path.join(dl_folder,filename), "wb") as my_blob:
+        blob_data=blobclient.download_blob()
+        blob_data.readinto(my_blob)
     logging.info("Download the blob to a local file")
     
 
 
 def main(args,config):
+    """
+    Fait le liens avec le config.ini
+    Fait appel aux fonctions (upload/download/ list).
+    """
     blobclient=BlobServiceClient(
         f"https://{config['storage']['account']}.blob.core.windows.net",
         config["storage"]["key"],
@@ -72,19 +74,20 @@ def main(args,config):
         #listeb = liste blob
     else:
         if args.action=="upload": 
-            #ok = upload
+            #Lié avec le parser = upload
             blobclient=containerclient.get_blob_client(os.path.basename(args.cible))
-            # se connecter au blob client et lui envoyer au fichier
+            #Lié avec le parser = se connecter au blob client et lui envoyer au fichier
             return upload(args.cible, blobclient)
-            #ok = downolad 
+            #Lié avec le parser = downolad 
         elif args.action=="download":
             blobclient=containerclient.get_blob_client(os.path.basename(args.remote))
-            #Télécharger fichier
+            #Lié avec le parser = Télécharger fichier
             logging.warning("Télécharge le fichier")
             return download(args.remote, config["general"]["restoredir"], blobclient)
         
 
 if __name__=="__main__":
+    #Parser pour utiliser dans son terminal, mode d'emplois dans requirement.txt
     parser=argparse.ArgumentParser("Logiciel d'archivage de documents")
     parser.add_argument("-cfg",default="config.ini",help="chemin du fichier de configuration")
     parser.add_argument("-lvl",default="info",help="niveau de log")

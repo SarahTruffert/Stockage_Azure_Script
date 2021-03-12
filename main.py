@@ -25,6 +25,8 @@ def listb(args, containerclient):
         """ 
         Répertorie les objets Blob dans le conteneur 
         en appelant la méthode list_blobs.
+        Le répertoire est le container qu'il va chercher dans 
+        le fichier ini et grace à a fonction main.
         """
 
         print(blob.name)

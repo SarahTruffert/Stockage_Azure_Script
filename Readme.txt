@@ -34,7 +34,7 @@ exemple : python .\main.py download .\hello_world.txt
 
 
 Comment j'ai récupéré mes requiremets.txt :
-Télécharger "autvenven.bat" (Merci Damien!)
+Télécharger "autvenven.bat" (Merci Damien!) ou pip install virtualenv
 python -m virtualenv venv dans le dossier du script
 Pour activer l'environnement virtuel faire le chemin d'accès sans le C: avec la commande .\dossier de la venv\venv\Scripts\activate (appelé venv par convention pas obligatoire)
 pip install azure-storage-blob

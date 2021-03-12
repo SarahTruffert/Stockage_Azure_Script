@@ -75,7 +75,13 @@ def download(filename, dl_folder, blobclient):
         blob_data=blobclient.download_blob()
         blob_data.readinto(my_blob)
     logging.info(&#34;Download the blob to a local file&#34;)
-    
+    &#34;&#34;&#34; Télécharge l’objet Blob créé précédemment via
+        download_blob. L’exemple de code ajoute le suffixe
+        « DOWNLOAD » au nom de fichier pour voir
+        les deux fichiers dans votre système de fichiers local.
+        fichier texte pour tester si ça marche.
+        wb = écrire 
+        &#34;&#34;&#34;   
 
 
 def main(args,config):
@@ -125,9 +131,7 @@ if __name__==&#34;__main__&#34;:
 
     args=parser.parse_args()
 
-    #erreur dans logging.warning : on a la fonction au lieu de l&#39;entier
     loglevels={&#34;debug&#34;:logging.DEBUG, &#34;info&#34;:logging.INFO, &#34;warning&#34;:logging.WARNING, &#34;error&#34;:logging.ERROR, &#34;critical&#34;:logging.CRITICAL}
-    &#34;&#34;&#34; &#34;&#34;&#34;
     print(loglevels[args.lvl.lower()])
     logging.basicConfig(level=loglevels[args.lvl.lower()])
 
@@ -158,7 +162,14 @@ if __name__==&#34;__main__&#34;:
     with open(os.path.join(dl_folder,filename), &#34;wb&#34;) as my_blob:
         blob_data=blobclient.download_blob()
         blob_data.readinto(my_blob)
-    logging.info(&#34;Download the blob to a local file&#34;)</code></pre>
+    logging.info(&#34;Download the blob to a local file&#34;)
+    &#34;&#34;&#34; Télécharge l’objet Blob créé précédemment via
+        download_blob. L’exemple de code ajoute le suffixe
+        « DOWNLOAD » au nom de fichier pour voir
+        les deux fichiers dans votre système de fichiers local.
+        fichier texte pour tester si ça marche.
+        wb = écrire 
+        &#34;&#34;&#34;   </code></pre>
 </details>
 </dd>
 <dt id="Stockage_Azure_Script.main.listb"><code class="name flex">

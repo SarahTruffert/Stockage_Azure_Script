@@ -28,7 +28,7 @@ jobs:
         
     - name: auto pdoc
       run: |
-        pdoc3 --html -o tmp /
+        pdoc3 --html -o tmp .
         rm -rf docs
         mkdir -p docs/
         mv tmp/* docs/
@@ -37,9 +37,6 @@ jobs:
       run: |
         echo ${{ github.ref }}
         git add .
-        git rm -rf __pycache__/
-        git rm -rf back/__pycache__/
-        git rm -rf test/__pycache__/
         git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git commit -m "CI: Automated build push" -a | exit 0

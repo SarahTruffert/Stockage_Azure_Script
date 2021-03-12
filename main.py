@@ -47,14 +47,13 @@ def download(filename, dl_folder, blobclient):
         blob_data=blobclient.download_blob()
         blob_data.readinto(my_blob)
     logging.info("Download the blob to a local file")
-    
-  """ Télécharge l’objet Blob créé précédemment via
+    """ Télécharge l’objet Blob créé précédemment via
         download_blob. L’exemple de code ajoute le suffixe
         « DOWNLOAD » au nom de fichier pour voir
         les deux fichiers dans votre système de fichiers local.
         fichier texte pour tester si ça marche.
         wb = écrire 
-    """   
+        """   
 
 
 def main(args,config):

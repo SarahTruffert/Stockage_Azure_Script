@@ -42,13 +42,7 @@ def upload(cible, blobclient):
 # Add 'DOWNLOAD' before the .txt extension
 # so you can see both files in the data directory
 def download(filename, dl_folder, blobclient):
-     """ Télécharge l’objet Blob créé précédemment via
-        download_blob. L’exemple de code ajoute le suffixe
-        « DOWNLOAD » au nom de fichier pour voir
-        les deux fichiers dans votre système de fichiers local.
-        fichier texte pour tester si ça marche.
-        wb = écrire 
-     """
+   
     with open(os.path.join(dl_folder,filename), "wb") as my_blob:
         blob_data=blobclient.download_blob()
         blob_data.readinto(my_blob)

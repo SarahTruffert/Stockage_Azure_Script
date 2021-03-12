@@ -34,12 +34,12 @@ exemple : python .\main.py download .\hello_world.txt
 
 
 Comment j'ai récupéré mes requiremets.txt :
-Télécharger "autvenven.bat"
-python -m virtualenv venv
-Pour activer l'environnement virtuel faire le chemin d'accès sans le C: avec la commande .\dossier de la venv\venv\Scripts\activate (appelé venv par défaut pas obligatoire)
+Télécharger "autvenven.bat" (Merci Damien!)
+python -m virtualenv venv dans le dossier du script
+Pour activer l'environnement virtuel faire le chemin d'accès sans le C: avec la commande .\dossier de la venv\venv\Scripts\activate (appelé venv par convention pas obligatoire)
 pip install azure-storage-blob
 puis upload ou download 
-Pour récupérer les requirement : pip freeze > requirements.txt pour les mettre directement dans un dossier
+Pour récupérer les requirement : pip freeze > requirements.txt pour les mettre directement dans le fichier requirements.txt
 "deactivate" pour désactiver l'env
 
 

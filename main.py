@@ -104,9 +104,7 @@ if __name__=="__main__":
 
     args=parser.parse_args()
 
-    #erreur dans logging.warning : on a la fonction au lieu de l'entier
     loglevels={"debug":logging.DEBUG, "info":logging.INFO, "warning":logging.WARNING, "error":logging.ERROR, "critical":logging.CRITICAL}
-    """ """
     print(loglevels[args.lvl.lower()])
     logging.basicConfig(level=loglevels[args.lvl.lower()])
 

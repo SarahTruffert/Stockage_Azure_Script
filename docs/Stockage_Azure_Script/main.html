@@ -65,6 +65,7 @@ def upload(cible, blobclient):
         la méthode upload_blob.
     &#34;&#34;&#34;
     with open(cible, &#34;rb&#34;) as f:
+        logging.info(&#34;Upload the blob from a local file&#34;)
         blobclient.upload_blob(f)
 
 
@@ -253,6 +254,7 @@ la méthode upload_blob.</p></div>
         la méthode upload_blob.
     &#34;&#34;&#34;
     with open(cible, &#34;rb&#34;) as f:
+        logging.info(&#34;Upload the blob from a local file&#34;)
         blobclient.upload_blob(f)</code></pre>
 </details>
 </dd>

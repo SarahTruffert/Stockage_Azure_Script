@@ -88,3 +88,21 @@
 12/03/2021 15:37:17 DEBUG - Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
 12/03/2021 15:37:17 DEBUG - Successfully imported extension module "markdown.extensions.toc".
 12/03/2021 15:37:17 DEBUG - Successfully loaded extension "markdown.extensions.toc.TocExtension".
+14/03/2021 16:52:08 DEBUG - Successfully imported extension module "markdown.extensions.abbr".
+14/03/2021 16:52:08 DEBUG - Successfully loaded extension "markdown.extensions.abbr.AbbrExtension".
+14/03/2021 16:52:08 DEBUG - Successfully imported extension module "markdown.extensions.attr_list".
+14/03/2021 16:52:08 DEBUG - Successfully loaded extension "markdown.extensions.attr_list.AttrListExtension".
+14/03/2021 16:52:08 DEBUG - Successfully imported extension module "markdown.extensions.def_list".
+14/03/2021 16:52:08 DEBUG - Successfully loaded extension "markdown.extensions.def_list.DefListExtension".
+14/03/2021 16:52:08 DEBUG - Successfully imported extension module "markdown.extensions.fenced_code".
+14/03/2021 16:52:08 DEBUG - Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+14/03/2021 16:52:08 DEBUG - Successfully imported extension module "markdown.extensions.footnotes".
+14/03/2021 16:52:08 DEBUG - Successfully loaded extension "markdown.extensions.footnotes.FootnoteExtension".
+14/03/2021 16:52:08 DEBUG - Successfully imported extension module "markdown.extensions.tables".
+14/03/2021 16:52:08 DEBUG - Successfully loaded extension "markdown.extensions.tables.TableExtension".
+14/03/2021 16:52:08 DEBUG - Successfully imported extension module "markdown.extensions.admonition".
+14/03/2021 16:52:08 DEBUG - Successfully loaded extension "markdown.extensions.admonition.AdmonitionExtension".
+14/03/2021 16:52:08 DEBUG - Successfully imported extension module "markdown.extensions.smarty".
+14/03/2021 16:52:08 DEBUG - Successfully loaded extension "markdown.extensions.smarty.SmartyExtension".
+14/03/2021 16:52:08 DEBUG - Successfully imported extension module "markdown.extensions.toc".
+14/03/2021 16:52:08 DEBUG - Successfully loaded extension "markdown.extensions.toc.TocExtension".

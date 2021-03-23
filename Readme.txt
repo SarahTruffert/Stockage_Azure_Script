@@ -42,7 +42,14 @@ puis upload ou download
 Pour récupérer les requirement : pip freeze > requirements.txt pour les mettre directement dans le fichier requirements.txt
 "deactivate" pour désactiver l'env
 
+-----------------------------------------
+gitignore.io "python"
+Créer fichier ".gitignore" 
+Copier coller les dépendences ajoutés
 
+pip install -r requirements
+
+-----------------------------------------
 
 Librairies utilisées : 
 - import sys : importer le système
